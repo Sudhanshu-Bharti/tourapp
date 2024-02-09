@@ -11,18 +11,14 @@ import {
 } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select"
+
 import Navbar from "../components/Navbar"
+import Footer from "../components/Footer"
 export default function page() {
   return (
-    <div className="flex justify-center items-center">    <Card className="w-[350px]">
+    <div className="flex justify-center items-center my-28">   
      <Navbar/> 
+     <Card className="w-[350px]">
     <CardHeader>
       <CardTitle>Create Profile</CardTitle>
       <CardDescription>Already a User?  <Link href='/' className="text-rose-600">Login</Link></CardDescription>
@@ -48,6 +44,7 @@ export default function page() {
       <Button>Submit</Button>
     </CardFooter>
   </Card>
+  <Footer />
 </div>
   )
 }

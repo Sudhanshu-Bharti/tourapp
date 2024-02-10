@@ -1,11 +1,24 @@
-'use client'
+import React, { useState } from "react";
+import { useRouter } from "next/router";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import { useEffect, useState } from "react";
 import Spline from '@splinetool/react-spline';
 
 export default function Home() {
   const [showSearchButton, setShowSearchButton] = useState(false);
+  const router = useRouter();
+
+  const handleModelClick = () => {
+    setShowSearchButton(true);
+  };
+
+  const handleSearchButtonClick = () => {
+    // Redirect to the search page
+    router.push("/search").then(() => {
+      // Scroll to the end of the page after the navigation
+      window.scrollTo(0, document.body.scrollHeight);
+    });
+  };
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -17,18 +30,18 @@ export default function Home() {
         <Spline
           scene="https://prod.spline.design/xqt9kHIXWASrN1NJ/scene.splinecode"
           className="w-full h-full"
+          onClick={handleModelClick} // Call handleModelClick when model is clicked
         />
-        <div
-          className="absolute inset-0 flex items-center justify-center pointer-events-none"
-          onMouseEnter={() => setShowSearchButton(true)}
-          onMouseLeave={() => setShowSearchButton(false)}
-        >
-          {showSearchButton && (
-            <button className="bg-white py-2 px-4 rounded-lg shadow-lg text-gray-900 font-bold text-lg pointer-events-auto">
+        {showSearchButton && (
+          <div className="absolute inset-0 flex items-center justify-center">
+            <button
+              className="bg-white py-2 px-4 rounded-lg shadow-lg text-gray-900 font-bold text-lg"
+              onClick={handleSearchButtonClick} 
+            >
               Search
             </button>
-          )}
-        </div>
+          </div>
+        )}
       </main>
       <footer className="mt-auto">
         <Footer />

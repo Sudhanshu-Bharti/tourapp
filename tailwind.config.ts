@@ -1,5 +1,5 @@
 import type { Config } from "tailwindcss"
-
+const { colors } = require('tailwindcss/defaultTheme')
 const config = {
   darkMode: ["class"],
   content: [
@@ -10,6 +10,9 @@ const config = {
   ],
   prefix: "",
   theme: {
+    colors: {
+      favBlue:'#63C5F8',
+    },
     container: {
       center: true,
       padding: "2rem",

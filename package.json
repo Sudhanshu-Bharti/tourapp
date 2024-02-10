@@ -39,6 +39,7 @@
     "@radix-ui/react-tooltip": "^1.0.7",
     "@splinetool/react-spline": "^2.2.6",
     "@splinetool/runtime": "^1.0.51",
+    "@supabase/supabase-js": "^2.39.3",
     "@vonage/server-sdk": "^3.12.2",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",

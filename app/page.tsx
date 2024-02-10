@@ -17,10 +17,10 @@ export default function Home() {
 
   return (
     <div className="flex flex-col min-h-screen">
-      <Navbar />
+      {/* <Navbar /> */}
       <main className="flex-grow relative">
         <div className="sticky top-0 z-10">
-          <Navbar />
+          {/* <Navbar /> */}
         </div>
         <Spline
           scene="https://prod.spline.design/xqt9kHIXWASrN1NJ/scene.splinecode"

@@ -17,7 +17,7 @@ import Footer from "../components/Footer"
 export default function page() {
   return (
     <div className="flex justify-center items-center my-28">   
-     <Navbar/> 
+     {/* <Navbar/>  */}
      <Card className="w-[350px]">
     <CardHeader>
       <CardTitle>Create Profile</CardTitle>

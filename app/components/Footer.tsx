@@ -12,8 +12,10 @@ export default function Component() {
           </Link>
           <nav className="flex items-center gap-4">
           <Link href='/'><Button>Home</Button></Link>
-      <Link href='/about'><Button>about</Button></Link>
-      <Link href='/join'><Button>Join Us as Guide</Button></Link>
+          <Link href='/about'><Button>about</Button></Link>
+          <Link href='/join'><Button>Join Us as Guide</Button></Link>
+          <Link href='/tourguide'><Button>Tour Guides</Button></Link>
+          <Link href='/register'><Button>Registeration</Button></Link>
           </nav>
           <div className="flex items-center gap-4">
             <Button size="icon" variant="outline">

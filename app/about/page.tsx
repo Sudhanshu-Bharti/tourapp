@@ -5,7 +5,6 @@ import Footer from '../components/Footer'
 export default function page() {
   return (
     <div>
-    {/* <Navbar/>  */}
     <h1 className='text-pink-800'>About</h1>
     <Footer /> 
     </div>

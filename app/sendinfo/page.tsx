@@ -1,15 +1,25 @@
 'use client'
-import { useRef } from 'react';
+import { ChangeEvent, useRef } from 'react';
 import React from 'react';
 import { Editor } from '@tinymce/tinymce-react';
 
-export default function App() {
+import { createClient } from '@/utils/supabase/client';
+
+export default function page() {
   const editorRef = useRef(null);
-//   const log = () => {
-//     if (editorRef.current) {
-//       console.log(editorRef.current.getContent());
-//     }
-//   };
+  const handleGeneratePDF = async ( e : ChangeEvent<HTMLInputElement>) => {
+    let file;
+    if(e.target.files){
+     file= e.target.files[0];
+    }
+    const supabase = createClient();
+    const  {data , error} = await supabase.storage.from('guide-documents').upload('public' +file?.name,file as File)
+   if(data){
+     console.log(data)
+   } else if (error){
+     console.log(error.message);
+   }
+   };
   return (
     <>
         <Editor
@@ -25,8 +35,10 @@ export default function App() {
         ],
         ai_request: (_request: any, respondWith: { string: (arg0: () => Promise<never>) => any; }) => respondWith.string(() => Promise.reject("See docs to implement AI Assistant")),
       }}
-      initialValue="Welcome to TinyMCE!"
-    />
-    </>
-  );
-}
+      initialValue="Your content here"
+      />
+        {/* @ts-ignore */}
+        <button onClick={handleGeneratePDF}>Send</button>
+        </>
+      );
+    }

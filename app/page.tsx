@@ -1,24 +1,18 @@
 'use client'
 import React, { useState } from "react";
-import { useRouter } from "next/router";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Spline from '@splinetool/react-spline';
 
 export default function Home() {
   const [showSearchButton, setShowSearchButton] = useState(false);
-  const router = useRouter();
 
   const handleModelClick = () => {
     setShowSearchButton(true);
   };
 
   const handleSearchButtonClick = () => {
-    // Redirect to the search page
-    router.push("/search").then(() => {
-      // Scroll to the end of the page after the navigation
-      window.scrollTo(0, document.body.scrollHeight);
-    });
+    console.log("Search button clicked");
   };
 
   return (
@@ -31,7 +25,7 @@ export default function Home() {
         <Spline
           scene="https://prod.spline.design/xqt9kHIXWASrN1NJ/scene.splinecode"
           className="w-full h-full"
-          onClick={handleModelClick} // Call handleModelClick when model is clicked
+          onClick={handleModelClick} 
         />
         {showSearchButton && (
           <div className="absolute inset-0 flex items-center justify-center">

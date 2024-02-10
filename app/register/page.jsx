@@ -1,10 +1,9 @@
 
-
 import { Label } from "@/components/ui/label"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 
-export default function Component() {
+export default function page() {
   return (
     <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto px-4 py-6">
       <div className="space-y-6">

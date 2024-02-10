@@ -20,18 +20,15 @@ const LoginPageContent = () => {
     }
   };
 
-  const handleVerifyCode = async () => {
+const handleVerifyCode = async () => {
     try {
-      const response = await vonage.verify.check({
-        request_id: requestId,
-        code: verificationCode
-      });
-      console.log("Verification status:", response);
-      // Redirect to the next page upon successful verification
+        const response = await vonage.verify.check(requestId, verificationCode);
+        console.log("Verification status:", response);
+        // Redirect to the next page upon successful verification
     } catch (error) {
-      console.error("Error verifying code:", error);
+        console.error("Error verifying code:", error);
     }
-  };
+};
 
   return (
     <div>

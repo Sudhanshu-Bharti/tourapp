@@ -83,7 +83,7 @@ export default function Login({
         <input
           className="rounded-md px-4 py-2 bg-inherit border mb-6"
           name="email"
-          placeholder="you@example.com"
+          placeholder="Email Address"
           required
         />
         <label className="text-md" htmlFor="password">

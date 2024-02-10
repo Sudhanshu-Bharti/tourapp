@@ -21,7 +21,7 @@ export default function page() {
      <Card className="w-[350px]">
     <CardHeader>
       <CardTitle>Create Profile</CardTitle>
-      <CardDescription>Already a User?  <Link href='/' className="text-rose-600">Login</Link></CardDescription>
+      <CardDescription>Already a User?  <Link href='/login' className="text-rose-600">Login</Link></CardDescription>
     </CardHeader>
     <CardContent>
       <form>

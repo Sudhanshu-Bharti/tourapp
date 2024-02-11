@@ -51,7 +51,7 @@ export default function Login({
   };
 
   return (
-    <div className="flex-1 flex flex-col w-full px-8 sm:max-w-md justify-center gap-2">
+    <div className="ml-96 mt-44 flex flex-col w-full px-8 sm:max-w-md justify-center gap-2">
       <Link
         href="/"
         className="absolute left-8 top-8 py-2 px-4 rounded-md no-underline text-foreground bg-btn-background hover:bg-btn-background-hover flex items-center group text-sm"
@@ -81,7 +81,7 @@ export default function Login({
           Email
         </label>
         <input
-          className="rounded-md px-4 py-2 bg-inherit border mb-6"
+          className="rounded-md text-gray-950 bg-white px-4 py-2 bg-inherit border mb-6"
           name="email"
           placeholder="Email Address"
           required
@@ -90,13 +90,14 @@ export default function Login({
           Password
         </label>
         <input
-          className="rounded-md px-4 py-2 bg-inherit border mb-6"
+          className="rounded-md text-gray-950 bg-white px-4 py-2 bg-inherit border mb-6"
           type="password"
           name="password"
           placeholder="••••••••"
           required
+
         />
-        <button className="bg-green-700 rounded-md px-4 py-2 text-foreground mb-2">
+        <button className="bg-slate-950 rounded-md px-4 py-2 text-white mb-2">
           Sign In
         </button>
         <button

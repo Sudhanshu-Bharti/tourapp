@@ -3,6 +3,15 @@
 The Traveler's Guide Project aims to address the challenges encountered by travelers when exploring unfamiliar destinations. This README provides an overview of the project's goals, features, and usage instructions.
 
 
+## Problem Statement
+Travelers embarking on journeys often encounter diverse challenges that disrupt their experiences. These issues include navigating unfamiliar surroundings, overcoming language barriers, and identifying popular local destinations and cuisine. The language barrier poses a significant hurdle, especially when tourists from regions with different native languages visit destinations where their language isn't widely spoken. For instance, a tourist from North India visiting South India may struggle to communicate with locals who don't speak Hindi or English fluently, hindering their ability to seek directions, order food, or request assistance. This barrier creates a sense of isolation and impedes the tourist's immersion in the local culture. Additionally, tourists often lack awareness about the customs, traditions, transportation options, and notable attractions of the cities or regions they explore. Arriving without prior research, they may miss out on authentic experiences and feel overwhelmed by the unfamiliar environment. Inadequate knowledge can lead to frustration and disappointment as tourists' expectations may not align with the realities of their destination
+
+## Idea
+The ROAMRIGHT: TOURIST AID BASED WEB APPLICATION aims to address the challenges faced by tourists by providing comprehensive guidance and assistance throughout their travels.
+
+By acting as a trustworthy middle man who acts as a mediator between the heedless tourist and the well acquainted guide, users(tourists) can book a local guide who will be with them and guide them along their travel/trip and make sure that their customer face no difficulty during their travel and have the best experience possible as a presence of a local who is very well acquainted with the travel destination helps a lot in enhancing the experience of tourists to immerse in the beauty of the destination.
+## Tech Stack of Our Project:
+The web application is made NEXT.js and uses React.js, Spline, Node js, Django, Blender and NoSQL.
 
 
 ## Getting Started

@@ -1,7 +1,12 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Overview
+
+The Traveler's Guide Project aims to address the challenges encountered by travelers when exploring unfamiliar destinations. This README provides an overview of the project's goals, features, and usage instructions.
+
+
+
 
 ## Getting Started
-
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 First, run the development server:
 
 ```bash

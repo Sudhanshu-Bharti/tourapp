@@ -10,9 +10,9 @@ const config = {
   ],
   prefix: "",
   theme: {
-    colors: {
-      favBlue:'#63C5F8',
-    },
+    // colors: {
+    //   favBlue:'#63C5F8',
+    // },
     container: {
       center: true,
       padding: "2rem",
